@@ -126,6 +126,12 @@ a:focus{
 		   HEADER DEFAULT CSS START #HEADER
 	  ==============================================================
 */
+
+
+              /*  Add Rooms Form Css */
+              
+              
+
 header {
     position: fixed;
     left: 0;
@@ -141,11 +147,11 @@ header {
     position: fixed;
     margin: -36px 0 0 0;
     box-shadow:0px 20px 20px 0px rgba(0, 0, 0, 0.05);
-    transition:background .3s ease,box-shadow .3s ease,, margin .4s ease;
-    -o-transition:background .3s ease,box-shadow .3s ease,, margin .4s ease;
-    -ms-transition:background .3s ease,box-shadow .3s ease,, margin .4s ease;
-    -moz-transition:background .3s ease,box-shadow .3s ease,, margin .4s ease;
-    -webkit-transition:background .3s ease,box-shadow .3s ease,, margin .4s ease;
+    transition:background .3s ease,box-shadow .3s ease, margin .4s ease;
+    -o-transition:background 0.3s ease,box-shadow 0.3s ease, margin .4s ease;
+    -ms-transition:background .3s ease,box-shadow .3s ease, margin .4s ease;
+    -moz-transition:background .3s ease,box-shadow .3s ease, margin .4s ease;
+    -webkit-transition:background .3s ease,box-shadow .3s ease, margin .4s ease;
 }
 	.sticky-header.affix-top{
 		background:transparent;
@@ -3044,3 +3050,83 @@ if it's not present, don't show loader */
 	z-index: 10;
 	position:absolute;
 }
+
+
+/* Full height section, center content */
+/* #section-5 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+} */
+
+/* Centered form container */
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading inside form */
+.form-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-heading .title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input styling */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select,
+.form-group textarea,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.form-group input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+

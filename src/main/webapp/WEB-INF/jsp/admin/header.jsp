@@ -32,18 +32,7 @@
                         <div class="chr-top-info"><i class="fa fa-phone"></i><span>+92 - 33267 -124589</span></div>
                         <div class="chr-top-info email-info"><i class="fa fa-envelope"></i><span>oscarthemes@gmail.com</span></div>
                     </div>
-                    <div class="pull-right">
-                        <ul class="chr-social rd-0">
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-tripadvisor"></i></a></li>
-                        </ul>
-                        <a class="chr-top-info chr-admin" href="signup.html">
-                            <i class="fa fa-user"></i>
-                            <span>Signup</span>
-                        </a>
-                    </div>
+                 
                 </div>
                 <!-- Top Bar Start -->
                 <!-- Navigation Start -->
@@ -54,14 +43,12 @@
                     <nav class="pull-right navigation">
                         <ul>
                             <li class="active"><a href="#home">Home</a></li>
-                            <li><a href="#section-1">offers</a></li>
-                            <li><a href="#section-2">services</a></li>
+                           
                             <li><a href="#section-3">staff</a></li>
-                            <li><a href="#section-4">Testimonials</a></li>
+                            
                             <li><a href="#section-5">Rooms</a></li>
-                            <li><a href="#section-10">Room List</a></li>
-                            <li><a href="#section-6">Gallery</a></li>
-                            <li><a href="#section-7">Blog</a></li>
+                            <li><a href="/rooms">Room List</a></li>
+                            
                             <li><a href="#section-8">Pricing</a></li>
                             <li><a href="#section-9">Contact us</a></li>
                         </ul>
@@ -71,13 +58,11 @@
                         <button class="dl-trigger">Open Menu</button>
                         <ul class="dl-menu">
                             <li class="menu-item mg-parent-menu active"><a href="#home">Home</a></li>
-                            <li class="menu-item mg-parent-menu"><a href="#section-1">offers</a></li>
-                            <li class="menu-item mg-parent-menu"><a href="#section-2">services</a></li>
+                           
                             <li class="menu-item mg-parent-menu"><a href="#section-3">staff</a></li>
-                            <li class="menu-item mg-parent-menu"><a href="#section-4">Testimonials</a></li>
+                            
                             <li class="menu-item mg-parent-menu"><a href="#section-5">Rooms</a></li>
-                            <li class="menu-item mg-parent-menu"><a href="#section-6">Gallery</a><li>
-                            <li class="menu-item mg-parent-menu"><a href="#section-7">Blog</a></li>
+                            <li class="menu-item mg-parent-menu"><a href="/admin/rooms.jsp">Room List</a></li>
                             <li class="menu-item mg-parent-menu"><a href="#section-8">Pricing</a></li>
                             <li class="menu-item mg-parent-menu"><a href="#section-9">Contact us</a></li>
                         </ul>

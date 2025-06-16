@@ -699,6 +699,15 @@
                         </div>
                     </div>
                 </section>
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 <!--Testimonial Section End-->
                 <!--Rooms Section Start-->
                 <section id="section-5">
@@ -784,6 +793,10 @@
                         </div>
                     </div>
                 </section>
+                
+                
+                
+                
                 <!--Rooms Section End-->
                 <!--Masonry Gallery Section Start-->
                 <section id="section-6" class="gray-bg">
