@@ -27,72 +27,62 @@ public class AddRoomsController {
 
 	@PostMapping("/addRooms")
 	public void addRooms(@ModelAttribute @Valid AddRoomsRequestDto roomReqDto, Model model) {
-        roomReqDto.setStatus("Available");
-        roomService.addRoom(roomReqDto);
-        
-        
+		roomReqDto.setStatus("Available");
+		roomService.addRoom(roomReqDto);
+
 //		
-		
+
 	}
 
 	@GetMapping("/rooms")
 	public String getRoomList(Model model) {
 		List<AddRoomsResponseDto> roomList = roomService.getRoomList();
-		System.out.println(roomList);
 
 		model.addAttribute("rooms", roomList);
 		return "admin/rooms";
 
 	}
-	
+
 	@GetMapping("/editRoom/{id}")
 	public String getById(@PathVariable int id, Model model) {
-		AddRoomsResponseDto resDto =roomService.getRoom(id);
-		
-		
-		
-		if(resDto!=null) {
-		model.addAttribute("room",resDto);
-		return "admin/update";
-	}else {
-		model.addAttribute("msgError","data is not found");
-		return "signUp/error";
+		AddRoomsResponseDto resDto = roomService.getRoom(id);
+
+		if (resDto != null) {
+			model.addAttribute("room", resDto);
+			return "admin/update";
+		} else {
+			model.addAttribute("msgError", "data is not found");
+			return "signUp/error";
+		}
 	}
-	}
-	
-	
+
 	@PostMapping("/updateRoom")
-	public String updateRoom(@ModelAttribute AddRoomsRequestDto reqDto,Model model) {
-		
-	 AddRoomsResponseDto resDto= roomService.updateRooms(reqDto);
-	 
-	 if(resDto!=null) {
-		 model.addAttribute("msgError","Data is not Updated");
-		 return "admin/success";
-	 }else {
-		 model.addAttribute("msgSuccess","Data is Updated");
-		 return "admin/error";
-	 }
-	
-	 
-	 
-	
-	}
-	
-	@GetMapping("/delete/{id}")
-	public String DeleteRoom(@PathVariable Long id, Model model) {
-		
-		
-		
-		String roomDeleted=roomService.deleteRoom(id);
-		
-		if(roomDeleted!=null) {
-			model.addAttribute("msgSuccess","Data is Deleted");
+	public String updateRoom(@ModelAttribute AddRoomsRequestDto reqDto, Model model) {
+
+		AddRoomsResponseDto resDto = roomService.updateRooms(reqDto);
+
+		if (resDto != null) {
+			model.addAttribute("msgError", "Data is not Updated");
 			return "admin/success";
-		}else {
-			model.addAttribute("msgError","Data is not  Deleted");
+		} else {
+			model.addAttribute("msgSuccess", "Data is Updated");
 			return "admin/error";
 		}
-		
+
+	}
+
+	@GetMapping("/delete/{id}")
+	public String DeleteRoom(@PathVariable Long id, Model model) {
+
+		String roomDeleted = roomService.deleteRoom(id);
+
+		if (roomDeleted != null) {
+			model.addAttribute("msgSuccess", "Data is Deleted");
+			return "admin/success";
+		} else {
+			model.addAttribute("msgError", "Data is not  Deleted");
+			return "admin/error";
+		}
+
 	}
 }

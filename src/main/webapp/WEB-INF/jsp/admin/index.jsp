@@ -214,399 +214,300 @@
 		</div>
 		<!--Banner Wrap End-->
 		<div class="main-contant">
-			
 			<!--Staff Section Start-->
 			<section id="section-3">
-				<div class="container">
-					<!--Heading 1 Start-->
+				<div class="staff-form-wrapper">
 					<div class="headind-1 text-center">
 						<h3 class="title">Our Special Staff</h3>
 					</div>
-					<!--Heading 1 End-->
-					<div class="chr-staff-slider">
-						<!--Staff Thumb Start-->
-						<div class="col-md-3 col-sm-6">
-							<div class="chr-staff-thumb">
-								<figure>
-									<img src="assets/extra-images/img-1.png" alt="oscarthemes" />
-									<div class="p-middel">
-										<p>Lorem Ipsum which looks many web sites pass websites is
-											there fore always.</p>
-										<ul class="chr-social">
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="text">
-									<h4 class="title">
-										<a href="#">Daniel Braim</a>
-									</h4>
-									<span class="designation">Manager</span>
-								</div>
-							</div>
-						</div>
-						<!--Staff Thumb End-->
-						<!--Staff Thumb Start-->
-						<div class="col-md-3 col-sm-6">
-							<div class="chr-staff-thumb">
-								<figure>
-									<img src="assets/extra-images/img-2.png" alt="oscarthemes" />
-									<div class="p-middel">
-										<p>Lorem Ipsum which looks many web sites pass websites is
-											there fore always.</p>
-										<ul class="chr-social">
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="text">
-									<h4 class="title">
-										<a href="#">Daniel Braim</a>
-									</h4>
-									<span class="designation">Manager</span>
-								</div>
-							</div>
-						</div>
-						<!--Staff Thumb End-->
-						<!--Staff Thumb Start-->
-						<div class="col-md-3 col-sm-6">
-							<div class="chr-staff-thumb">
-								<figure>
-									<img src="assets/extra-images/img-3.png" alt="oscarthemes" />
-									<div class="p-middel">
-										<p>Lorem Ipsum which looks many web sites pass websites is
-											there fore always.</p>
-										<ul class="chr-social">
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="text">
-									<h4 class="title">
-										<a href="#">Daniel Braim</a>
-									</h4>
-									<span class="designation">Manager</span>
-								</div>
-							</div>
-						</div>
-						<!--Staff Thumb End-->
-						<!--Staff Thumb Start-->
-						<div class="col-md-3 col-sm-6">
-							<div class="chr-staff-thumb">
-								<figure>
-									<img src="assets/extra-images/img-4.png" alt="oscarthemes" />
-									<div class="p-middel">
-										<p>Lorem Ipsum which looks many web sites pass websites is
-											there fore always.</p>
-										<ul class="chr-social">
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="text">
-									<h4 class="title">
-										<a href="#">Daniel Braim</a>
-									</h4>
-									<span class="designation">Manager</span>
-								</div>
-							</div>
-						</div>
-						<!--Staff Thumb End-->
-						<!--Staff Thumb Start-->
-						<div class="col-md-3 col-sm-6">
-							<div class="chr-staff-thumb">
-								<figure>
-									<img src="assets/extra-images/img-4.png" alt="oscarthemes" />
-									<div class="p-middel">
-										<p>Lorem Ipsum which looks many web sites pass websites is
-											there fore always.</p>
-										<ul class="chr-social">
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
-									</div>
-								</figure>
-								<div class="text">
-									<h4 class="title">
-										<a href="#">Daniel Braim</a>
-									</h4>
-									<span class="designation">Manager</span>
-								</div>
-							</div>
-						</div>
-						<!--Staff Thumb End-->
-					</div>
+
+					<form action="/add-staff" method="post" class="staff-form">
+
+						<label>Full Name:</label> <input type="text" name="fullName"
+							required> <label>Email:</label> <input type="email"
+							name="email" required> <label>Phone Number:</label> <input
+							type="text" name="phoneNumber" required> <label>Gender:</label>
+						<input type="radio" name="gender" value="Male"> Male <input
+							type="radio" name="gender" value="Female"> Female <input
+							type="radio" name="gender" value="Other"> Other <label>Address:</label>
+						<textarea name="address" rows="3" cols="30" required></textarea>
+
+						<label>Joining Date:</label> <input type="date" name="joiningDate"
+							required> <label>Department:</label> <select
+							name="department" required>
+							<option value="">-- Select Department --</option>
+							<option value="Manager">Manager</option>
+							<option value="Cleaner">Cleaner</option>
+							<option value="Receptionist">Receptionist</option>
+						</select>
+
+						<button type="submit">Add Staff</button>
+					</form>
+
+
 				</div>
 			</section>
-			<!--Staff Section End-->
-			
+		</div>
+
+		<!--Staff Section End-->
 
 
 
 
 
-			<!--Testimonial Section End-->
-			<!--Rooms Section Start-->
-			<section id="section-5">
+
+		<!--Testimonial Section End-->
+		<!--Rooms Section Start-->
+		<section id="section-5">
 			<div class="headind-1 text-center">
-                            <h3 class="title">Add Rooms</h3>
-                        </div>
-				<div class="container">
-				
-					<div class="row">
-						<div class="form-container">
-							
-							
-							<form action="addRooms" method="post">
-								
-								<div class="form-group">
-									<label for="room_number">Room Number</label> <input type="number"
-										name="room_number" id="room_number" placeholder="Room Number">
-								</div>
-								
-								<div class="form-group">
-									<label for="room_types">Room Type</label> <select name="room_types"
-										id="room_types">
-										<option>Select Room</option>
-										<option>Single Room</option>
-										<option>Double Room</option>
-									</select>
-								</div>
+				<h3 class="title">Add Rooms</h3>
+			</div>
+			<div class="container">
 
-								<div class="form-group">
-									<label for="bed_count ">Bed Count</label> <input type="number"
-										name="bed_count" id="bed_count " placeholder="2">
-								</div>
-
-								<div class="form-group">
-									<label for="price_per_night">Price Per Night</label> <input
-										type="text" id="price_per_night" name="price_per_night"
-										placeholder="0.0000">
-								</div>
-
-								<div class="form-group">
-									<label>AC / Non-AC:</label><br> <input type="radio"
-										name="ac_type" value="AC"> AC <input type="radio"
-										name="ac_type" value="Non-AC"> Non-AC
-								</div>
-								
-								
-
-								<div class="form-group">
-									<label>Description:</label>
-									<textarea name="description" rows="4" cols="30"></textarea>
-								</div>
-
-								<div class="form-group">
-									<label>Room Image:</label> <input type="file"
-										name="room_image_path">
-								</div>
-
-								<div class="form-group text-center">
-									<input type="submit" value="Add Room">
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</section>
-
-           
-           <!-- Rooms Lists Section Start -->
-           
-           
-           <section id="section-10">
-			<div class="headind-1 text-center">
-                            <h3 class="title">Room List</h3>
-                        </div>
-				<div class="container">
-				
-					<div class="row">
-						<div class="form-container">
-						
-						</div>
-					</div>
-				 </div>
-			
-			</section>
-           
-           <!-- Rooms Lists Section End -->
+				<div class="row">
+					<div class="form-container">
 
 
+						<form action="addRooms" method="post">
 
-			<!--Rooms Section End-->
-			
-			<!--Price Section Start-->
-			<section id="section-8" class="gray-bg price-table-section">
-				<div class="container">
-					<!--Heading 1 Start-->
-					<div class="headind-1 text-center">
-						<h3 class="title">Our Pricing</h3>
-					</div>
-					<!--Heading 1 End-->
-					<div class="row">
-						<!--Price Table Start-->
-						<div class="col-md-4 col-sm-6">
-							<div class="price-table">
-								<h4 class="title">
-									$ 299 <sub>/ month</sub>
-								</h4>
-								<figure>
-									<img src="assets/extra-images/price-img1.jpg" alt="OscarThemes">
-								</figure>
-								<div class="text">
-									<p>Lorem Ipsum Dolor Sit Amet, is Consectetur Adipisicing A
-										Elitie Orem Ipsum Dolor Sit Amet, is Consectetur...</p>
-									<ul class="chr-price-contant">
-										<li>Unlimited Access</li>
-										<li>Free 2 Days Training</li>
-										<li>5 Weeks Gym Pass</li>
-										<li>1 Fitness Course</li>
-										<li>Unlimited Gym Enterance</li>
-									</ul>
-									<a class="chr-btn fancy-btn" href="#">Buy Now</a>
-								</div>
+							<div class="form-group">
+								<label for="room_number">Room Number</label> <input
+									type="number" name="room_number" id="room_number"
+									placeholder="Room Number">
 							</div>
-						</div>
-						<!--Price Table End-->
-						<!--Price Table Start-->
-						<div class="col-md-4 col-sm-6">
-							<div class="price-table">
-								<h4 class="title">
-									$ 399 <sub>/ 6month</sub>
-								</h4>
-								<figure>
-									<img src="assets/extra-images/price-img2.jpg" alt="OscarThemes">
-								</figure>
-								<div class="text">
-									<p>Lorem Ipsum Dolor Sit Amet, is Consectetur Adipisicing A
-										Elitie Orem Ipsum Dolor Sit Amet, is Consectetur...</p>
-									<ul class="chr-price-contant">
-										<li>Unlimited Access</li>
-										<li>Free 2 Days Training</li>
-										<li>5 Weeks Gym Pass</li>
-										<li>1 Fitness Course</li>
-										<li>Unlimited Gym Enterance</li>
-									</ul>
-									<a class="chr-btn fancy-btn" href="#">Buy Now</a>
-								</div>
+
+							<div class="form-group">
+								<label for="room_types">Room Type</label> <select
+									name="room_types" id="room_types">
+									<option>Select Room</option>
+									<option>Single Room</option>
+									<option>Double Room</option>
+								</select>
 							</div>
-						</div>
-						<!--Price Table End-->
-						<!--Price Table Start-->
-						<div class="col-md-4 hidden-sm">
-							<div class="price-table">
-								<h4 class="title">
-									$ 499 <sub>/ year</sub>
-								</h4>
-								<figure>
-									<img src="assets/extra-images/price-img3.jpg" alt="OscarThemes">
-								</figure>
-								<div class="text">
-									<p>Lorem Ipsum Dolor Sit Amet, is Consectetur Adipisicing A
-										Elitie Orem Ipsum Dolor Sit Amet, is Consectetur...</p>
-									<ul class="chr-price-contant">
-										<li>Unlimited Access</li>
-										<li>Free 2 Days Training</li>
-										<li>5 Weeks Gym Pass</li>
-										<li>1 Fitness Course</li>
-										<li>Unlimited Gym Enterance</li>
-									</ul>
-									<a class="chr-btn fancy-btn" href="#">Buy Now</a>
-								</div>
+
+							<div class="form-group">
+								<label for="bed_count ">Bed Count</label> <input type="number"
+									name="bed_count" id="bed_count " placeholder="2">
 							</div>
-						</div>
-						<!--Price Table End-->
-					</div>
-				</div>
-			</section>
-			<!--Price Section End-->
-			<!--Contact Section Start-->
-			<section id="section-9">
-				<div class="container">
-					<div class="contact-form">
-						<!--Heading 1 Start-->
-						<div class="headind-1 text-center">
-							<h3 class="title">Get In Touch</h3>
-						</div>
-						<!--Heading 1 End-->
-						<form id="contact-form"
-							action="https://oscarthemes.com/html/hotel/onepage-demo/php/contact-form.php"
-							method="POST">
-							<!--Divider Start-->
-							<div class="input-divider row">
-								<div class="col-md-4 col-sm-4">
-									<!--Input Field Start-->
-									<div class="input-field">
-										<input type="text" value=""
-											data-msg-required="Please enter your name" maxlength="100"
-											class="form-control " name="name" id="name"
-											placeholder="Your Name" required>
-									</div>
-									<!--Input Field End-->
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<!--Input Field Start-->
-									<div class="input-field">
-										<input type="email" value=""
-											data-msg-required="Please enter your email address"
-											data-msg-email="Please enter a valid email address"
-											maxlength="100" class="form-control " name="email" id="email"
-											placeholder="Your Email" required>
-									</div>
-									<!--Input Field End-->
-								</div>
-								<div class="col-md-4 col-sm-4">
-									<!--Input Field Start-->
-									<div class="input-field">
-										<input type="text" value=""
-											data-msg-required="Please enter subject" maxlength="100"
-											class="form-control " name="subject" id="subject"
-											placeholder="Subject" required>
-									</div>
-									<!--Input Field End-->
-								</div>
+
+							<div class="form-group">
+								<label for="price_per_night">Price Per Night</label> <input
+									type="text" id="price_per_night" name="price_per_night"
+									placeholder="0.0000">
 							</div>
-							<!--Divider End-->
-							<!--Input Field Start-->
-							<div class="input-field">
-								<textarea maxlength="5000"
-									data-msg-required="Please enter your message" rows="4"
-									class="form-control " name="message" id="message"
-									placeholder="Your Message" required></textarea>
+
+							<div class="form-group">
+								<label>AC / Non-AC:</label><br> <input type="radio"
+									name="ac_type" value="AC"> AC <input type="radio"
+									name="ac_type" value="Non-AC"> Non-AC
 							</div>
-							<!--Input Field End-->
-							<!--Input Field Start-->
-							<div class="input-field text-center">
-								<input type="submit" value="SEND MESSAGE"
-									class="button medium rounded gray font-open-sans mt-40"
-									data-loading-text="Loading...">
+
+
+
+							<div class="form-group">
+								<label>Description:</label>
+								<textarea name="description" rows="4" cols="30"></textarea>
 							</div>
-							<!--Input Field End-->
-							<div class="alert alert-success hidden animated pulse"
-								id="contactSuccess">Thanks, your message has been sent to
-								us.</div>
-							<div class="alert alert-danger hidden animated shake"
-								id="contactError">
-								<strong>Error!</strong> There was an error sending your message.
+
+							<div class="form-group">
+								<label>Room Image:</label> <input type="file"
+									name="room_image_path">
+							</div>
+
+							<div class="form-group text-center">
+								<input type="submit" value="Add Room">
 							</div>
 						</form>
 					</div>
 				</div>
-			</section>
-			<!--Contact Section End-->
+			</div>
+		</section>
 
-			<jsp:include page="../common/footer.jsp"></jsp:include>
-		</div>
+
+		<!-- Rooms Lists Section Start -->
+
+
+		<section id="section-10">
+			<div class="headind-1 text-center">
+				<h3 class="title">Room List</h3>
+			</div>
+			<div class="container">
+
+				<div class="row">
+					<div class="form-container"></div>
+				</div>
+			</div>
+
+		</section>
+
+		<!-- Rooms Lists Section End -->
+
+
+
+		<!--Rooms Section End-->
+
+		<!--Price Section Start-->
+		<section id="section-8" class="gray-bg price-table-section">
+			<div class="container">
+				<!--Heading 1 Start-->
+				<div class="headind-1 text-center">
+					<h3 class="title">Our Pricing</h3>
+				</div>
+				<!--Heading 1 End-->
+				<div class="row">
+					<!--Price Table Start-->
+					<div class="col-md-4 col-sm-6">
+						<div class="price-table">
+							<h4 class="title">
+								$ 299 <sub>/ month</sub>
+							</h4>
+							<figure>
+								<img src="assets/extra-images/price-img1.jpg" alt="OscarThemes">
+							</figure>
+							<div class="text">
+								<p>Lorem Ipsum Dolor Sit Amet, is Consectetur Adipisicing A
+									Elitie Orem Ipsum Dolor Sit Amet, is Consectetur...</p>
+								<ul class="chr-price-contant">
+									<li>Unlimited Access</li>
+									<li>Free 2 Days Training</li>
+									<li>5 Weeks Gym Pass</li>
+									<li>1 Fitness Course</li>
+									<li>Unlimited Gym Enterance</li>
+								</ul>
+								<a class="chr-btn fancy-btn" href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+					<!--Price Table End-->
+					<!--Price Table Start-->
+					<div class="col-md-4 col-sm-6">
+						<div class="price-table">
+							<h4 class="title">
+								$ 399 <sub>/ 6month</sub>
+							</h4>
+							<figure>
+								<img src="assets/extra-images/price-img2.jpg" alt="OscarThemes">
+							</figure>
+							<div class="text">
+								<p>Lorem Ipsum Dolor Sit Amet, is Consectetur Adipisicing A
+									Elitie Orem Ipsum Dolor Sit Amet, is Consectetur...</p>
+								<ul class="chr-price-contant">
+									<li>Unlimited Access</li>
+									<li>Free 2 Days Training</li>
+									<li>5 Weeks Gym Pass</li>
+									<li>1 Fitness Course</li>
+									<li>Unlimited Gym Enterance</li>
+								</ul>
+								<a class="chr-btn fancy-btn" href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+					<!--Price Table End-->
+					<!--Price Table Start-->
+					<div class="col-md-4 hidden-sm">
+						<div class="price-table">
+							<h4 class="title">
+								$ 499 <sub>/ year</sub>
+							</h4>
+							<figure>
+								<img src="assets/extra-images/price-img3.jpg" alt="OscarThemes">
+							</figure>
+							<div class="text">
+								<p>Lorem Ipsum Dolor Sit Amet, is Consectetur Adipisicing A
+									Elitie Orem Ipsum Dolor Sit Amet, is Consectetur...</p>
+								<ul class="chr-price-contant">
+									<li>Unlimited Access</li>
+									<li>Free 2 Days Training</li>
+									<li>5 Weeks Gym Pass</li>
+									<li>1 Fitness Course</li>
+									<li>Unlimited Gym Enterance</li>
+								</ul>
+								<a class="chr-btn fancy-btn" href="#">Buy Now</a>
+							</div>
+						</div>
+					</div>
+					<!--Price Table End-->
+				</div>
+			</div>
+		</section>
+		<!--Price Section End-->
+		<!--Contact Section Start-->
+		<section id="section-9">
+			<div class="container">
+				<div class="contact-form">
+					<!--Heading 1 Start-->
+					<div class="headind-1 text-center">
+						<h3 class="title">Get In Touch</h3>
+					</div>
+					<!--Heading 1 End-->
+					<form id="contact-form"
+						action="https://oscarthemes.com/html/hotel/onepage-demo/php/contact-form.php"
+						method="POST">
+						<!--Divider Start-->
+						<div class="input-divider row">
+							<div class="col-md-4 col-sm-4">
+								<!--Input Field Start-->
+								<div class="input-field">
+									<input type="text" value=""
+										data-msg-required="Please enter your name" maxlength="100"
+										class="form-control " name="name" id="name"
+										placeholder="Your Name" required>
+								</div>
+								<!--Input Field End-->
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<!--Input Field Start-->
+								<div class="input-field">
+									<input type="email" value=""
+										data-msg-required="Please enter your email address"
+										data-msg-email="Please enter a valid email address"
+										maxlength="100" class="form-control " name="email" id="email"
+										placeholder="Your Email" required>
+								</div>
+								<!--Input Field End-->
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<!--Input Field Start-->
+								<div class="input-field">
+									<input type="text" value=""
+										data-msg-required="Please enter subject" maxlength="100"
+										class="form-control " name="subject" id="subject"
+										placeholder="Subject" required>
+								</div>
+								<!--Input Field End-->
+							</div>
+						</div>
+						<!--Divider End-->
+						<!--Input Field Start-->
+						<div class="input-field">
+							<textarea maxlength="5000"
+								data-msg-required="Please enter your message" rows="4"
+								class="form-control " name="message" id="message"
+								placeholder="Your Message" required></textarea>
+						</div>
+						<!--Input Field End-->
+						<!--Input Field Start-->
+						<div class="input-field text-center">
+							<input type="submit" value="SEND MESSAGE"
+								class="button medium rounded gray font-open-sans mt-40"
+								data-loading-text="Loading...">
+						</div>
+						<!--Input Field End-->
+						<div class="alert alert-success hidden animated pulse"
+							id="contactSuccess">Thanks, your message has been sent to
+							us.</div>
+						<div class="alert alert-danger hidden animated shake"
+							id="contactError">
+							<strong>Error!</strong> There was an error sending your message.
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!--Contact Section End-->
+
+		<jsp:include page="../common/footer.jsp"></jsp:include>
+	</div>
 	</div>
 
 	<!-- Plugin jQuery Library -->

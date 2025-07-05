@@ -23,13 +23,13 @@ public class LoginController {
 	public String loginUser(@ModelAttribute @Valid LoginRequestDto loginDto, Model model, HttpSession session) {
 
 		LoginResponseDto dto = loginService.loginUserService(loginDto);
-		
-		if(dto==null) {
-			return"login/login";
+
+		if (dto == null) {
+			return "login/login";
+
 		}
 
-//		session.setAttribute("emailid", dto.getEmail());
-//		session.setAttribute("password", dto.getPassword());
+
 
 		if (dto.getRole().equals("Admin")) {
 			return "admin/index";

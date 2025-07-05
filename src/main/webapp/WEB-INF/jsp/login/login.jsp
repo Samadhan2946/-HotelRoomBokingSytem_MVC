@@ -41,7 +41,16 @@
                              <p id="error-msg" style="color:red"></p>
                         </div>
 
-                       
+                       <div class="input-field">
+                                        <label for="role">Select Role</label>
+                                        <select id="role" name="role">
+                                        
+                                        <option>Select Role</option>
+                                        <option>Admin</option>
+                                        <option>Customer</option>
+                                        </select>
+                                        
+                                    </div>
 
                         <div class="input-field">
                             <input type="submit" value="Login">

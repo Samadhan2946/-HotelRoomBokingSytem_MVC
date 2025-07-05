@@ -26,5 +26,9 @@ public class LoginRequestDto {
 	@Size(max=40)
 	private String password;
 	
+	@NotNull
+	@Size(max=32)
+	private String role;
+	
 	
 }

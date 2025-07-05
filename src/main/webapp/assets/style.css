@@ -3130,3 +3130,61 @@ if it's not present, don't show loader */
     background-color: #0056b3;
 }
 
+
+.staff-form-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	padding: 20px;
+	background-color: #f9f9f9;
+}
+
+.staff-form {
+	background-color: #fff;
+	padding: 30px 40px;
+	border-radius: 10px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 500px;
+}
+
+.staff-form label {
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.staff-form input[type="text"],
+.staff-form input[type="email"],
+.staff-form input[type="date"],
+.staff-form select,
+.staff-form textarea {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.staff-form textarea {
+	resize: vertical;
+}
+
+.staff-form button {
+	width: 100%;
+	padding: 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.staff-form button:hover {
+	background-color: #0056b3;
+}
+
+
