@@ -73,16 +73,7 @@
                                         <input type="text"  name="email"placeholder="sam@gmail.com" maxlength="15">
                                     </div>
                                     
-                                     <div class="input-field">
-                                        <label for="role">Select Role</label>
-                                        <select id="role" name="role">
-                                        
-                                        <option>Select Role</option>
-                                        <option>Admin</option>
-                                        <option>Customer</option>
-                                        </select>
-                                        
-                                    </div>
+                                     
                                     
                                     <div class="input-field">
                                         <input type="submit" value="Create Account">

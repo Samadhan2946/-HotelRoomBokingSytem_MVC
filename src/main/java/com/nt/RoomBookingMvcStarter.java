@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RoomBooking_MVCStarter {
+public class RoomBookingMvcStarter {
+
 	public static void main(String[] args) {
-		SpringApplication.run(RoomBooking_MVCStarter.class, args);
+		SpringApplication.run(RoomBookingMvcStarter.class, args);
 		
 	}
-
 }

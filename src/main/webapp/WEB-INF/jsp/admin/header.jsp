@@ -48,7 +48,7 @@
                             
                             <li><a href="#section-5">Rooms</a></li>
                             <li><a href="/rooms">Room List</a></li>
-                            
+                            <li><a href="/staffList">Staff List</a></li>
                             <li><a href="#section-8">Pricing</a></li>
                             <li><a href="#section-9">Contact us</a></li>
                         </ul>
@@ -63,6 +63,7 @@
                             
                             <li class="menu-item mg-parent-menu"><a href="#section-5">Rooms</a></li>
                             <li class="menu-item mg-parent-menu"><a href="/admin/rooms.jsp">Room List</a></li>
+                             <li class="menu-item mg-parent-menu"><a href="/admin/staffList.jsp">Staff List</a></li>
                             <li class="menu-item mg-parent-menu"><a href="#section-8">Pricing</a></li>
                             <li class="menu-item mg-parent-menu"><a href="#section-9">Contact us</a></li>
                         </ul>

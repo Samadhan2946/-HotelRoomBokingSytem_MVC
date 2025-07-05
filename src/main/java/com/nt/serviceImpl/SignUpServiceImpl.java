@@ -19,7 +19,7 @@ public class SignUpServiceImpl implements SignUpService {
 		
 		RestTemplate templet=new RestTemplate();
 		
-		String url="http://localhost:9696/signUp_user";
+		String url="http://localhost:9292/signUp_user";
 		
 		HttpHeaders header=new HttpHeaders();
 		header.setContentType(MediaType.APPLICATION_JSON);

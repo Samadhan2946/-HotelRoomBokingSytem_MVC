@@ -135,7 +135,7 @@
 	
 	                    <div class="form-group">
 	                        <label>Room Image:</label>
-	                        <input type="file" name="room_image_path">
+	                        <input type="file" name="room_image_path" value="${room.room_image_path}">
 	                    </div>
 	
 	                    <div class="form-group text-center">
