@@ -3,49 +3,17 @@
 
 <!-- Mirrored from oscarthemes.com/html/hotel/onepage-demo/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 27 May 2025 08:26:58 GMT -->
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<meta name="robots" content="index, follow">
-<meta name="keywords"
-	content="HTML5 Template, Hotels near me, Motel, booking hotel,hotel booking,rooms,discounted,offers,deals,last minute,hotels,oscarthemes,Oscar Themes,Jasmine Hotel">
-<meta name="description"
-	content="Discover Oscar Themes - Jasmine Hotel HTML5 Template, Hotel, Travel,Top Destinations Discover responsive Bootstrap templates, & HTML templates,">
-<meta name="theme-color" content="#f4b843">
-<title>Home Hotel</title>
-<!-- Css Plugin Css Collection -->
-<link href="assets/css/css-plugin-collection.css" rel="stylesheet">
-<!-- Theme Default Css -->
-<link href="assets/css/typography.css" rel="stylesheet">
-<!-- Short Codes Css -->
-<link href="assets/css/shortcodes.css" rel="stylesheet">
-<!-- Style Css -->
-<link href="assets/style.css" rel="stylesheet">
-<!-- Color Css -->
-<link href="assets/css/color.css" rel="stylesheet">
-<!-- Responsive Css -->
-<link href="assets/css/responsive.css" rel="stylesheet">
-<!-- FAVICONS -->
-<link rel="shortcut icon" href="assets/images/favicon/favicon.png">
-<link rel="apple-touch-icon"
-	href="assets/images/favicon/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72"
-	href="assets/images/favicon/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114"
-	href="assets/images/favicon/apple-touch-icon-114x114.png">
-<link rel="icon" sizes="192x192"
-	href="assets/images/favicon/icon-192x192.png">
+
 </head>
 <body>
 
 	<div id="home" class="chr-wrapper">
 		<jsp:include page="../admin/header.jsp"></jsp:include>
-		<!--Banner Wrap Start-->
+		<!-- <!-- Banner Wrap Start
 		<div class="chr_banner banner-hotel">
 			<ul class="slider arrows">
 				<li class="">
-					<!--Banner Thumb START-->
+					Banner Thumb START
 					<div>
 						<img src="assets/extra-images/banner-01.jpg" alt="Image here">
 						<div class="chr-caption-wrapper">
@@ -67,10 +35,10 @@
 								</div>
 							</div>
 						</div>
-					</div> <!--Banner Thumb End-->
+					</div> Banner Thumb End
 				</li>
 				<li class="">
-					<!--Banner Thumb START-->
+					Banner Thumb START
 					<div>
 						<img src="assets/extra-images/banner-02.jpg" alt="Image here">
 						<div class="chr-caption-wrapper">
@@ -92,10 +60,10 @@
 								</div>
 							</div>
 						</div>
-					</div> <!--Banner Thumb End-->
+					</div> Banner Thumb End
 				</li>
 				<li class="">
-					<!--Banner Thumb START-->
+					Banner Thumb START
 					<div>
 						<img src="assets/extra-images/banner-03.jpg" alt="Image here">
 						<div class="chr-caption-wrapper">
@@ -117,26 +85,26 @@
 								</div>
 							</div>
 						</div>
-					</div> <!--Banner Thumb End-->
+					</div> Banner Thumb End
 				</li>
 			</ul>
-			<!--Widget Booking Start-->
+			Widget Booking Start
 			<div class="widget widget-booking">
 				<div class="booking-form">
-					<!--Title Start-->
+					Title Start
 					<h3 class="title th-bd">Room Booking</h3>
-					<!--Title End-->
+					Title End
 					<form>
 						<div class="row">
 							<div class="col-md-12">
-								<!--Input Field Start-->
+								Input Field Start
 								<div class="input-field">
 									<input type="text" placeholder="Your Name">
 								</div>
-								<!--Input Field End-->
+								Input Field End
 							</div>
 							<div class="col-md-6">
-								<!--Input Field Start-->
+								Input Field Start
 								<div class="input-field">
 									<div class="rq-check-inout-wrapper rq-check-in-wrapper"
 										id="rq-check-in-single">
@@ -147,10 +115,10 @@
 										</div>
 									</div>
 								</div>
-								<!--Input Field End-->
+								Input Field End
 							</div>
 							<div class="col-md-6">
-								<!--Input Field Start-->
+								Input Field Start
 								<div class="input-field">
 									<div class="rq-check-inout-wrapper rq-check-in-wrapper"
 										id="rq-check-out-single">
@@ -161,34 +129,34 @@
 										</div>
 									</div>
 								</div>
-								<!--Input Field End-->
+								Input Field End
 							</div>
 							<div class="col-md-6">
-								<!--Input Field Start-->
+								Input Field Start
 								<div class="input-field">
-									<!-- TIME WRAP START-->
+									TIME WRAP START
 									<div title="check in" class="time_picker">
 										<input id="rq-check-in-time" class="timepicker"
 											placeholder="Time" name="time_in" />
 									</div>
-									<!--TIME WRAP END-->
+									TIME WRAP END
 								</div>
-								<!--Input Field End-->
+								Input Field End
 							</div>
 							<div class="col-md-6">
-								<!--Input Field Start-->
+								Input Field Start
 								<div class="input-field">
-									<!-- TIME WRAP START-->
+									TIME WRAP START
 									<div title="check out" class="time_picker">
 										<input id="rq-check-out-time" class="timepicker"
 											placeholder="Time" name="time_out" />
 									</div>
-									<!--TIME WRAP END-->
+									TIME WRAP END
 								</div>
-								<!--Input Field End-->
+								Input Field End
 							</div>
 							<div class="col-md-12">
-								<!--Input Field Start-->
+								Input Field Start
 								<div class="input-field">
 									<select>
 										<option value="">1 Adult 1 Room</option>
@@ -198,154 +166,25 @@
 										<option value="whoop">10 Adult 3 Room</option>
 									</select>
 								</div>
-								<!--Input Field End-->
+								Input Field End
 							</div>
 						</div>
-						<!--Input Field Start-->
+						Input Field Start
 						<div class="input-field">
 							<input class="chr-btn th-bg" type="submit"
 								value="Check Availability">
 						</div>
-						<!--Input Field End-->
+						Input Field End
 					</form>
 				</div>
 			</div>
-			<!--Widget Booking End-->
-		</div>
-		<!--Banner Wrap End-->
-		<div class="main-contant">
-			<!--Staff Section Start-->
-			<section id="section-3">
-				<div class="staff-form-wrapper">
-					<div class="headind-1 text-center">
-						<h3 class="title">Our Special Staff</h3>
-					</div>
+			Widget Booking End
+		</div> --> 
+	
+		
 
-					<form action="/add-staff" method="post" class="staff-form">
-
-						<label>Full Name:</label> <input type="text" name="fullName"
-							required> <label>Email:</label> <input type="email"
-							name="email" required> <label>Phone Number:</label> <input
-							type="text" name="phoneNumber" required> <label>Gender:</label>
-						<input type="radio" name="gender" value="Male"> Male <input
-							type="radio" name="gender" value="Female"> Female <input
-							type="radio" name="gender" value="Other"> Other <label>Address:</label>
-						<textarea name="address" rows="3" cols="30" required></textarea>
-
-						<label>Joining Date:</label> <input type="date" name="joiningDate"
-							required> <label>Department:</label> <select
-							name="department" required>
-							<option value="">-- Select Department --</option>
-							<option value="Manager">Manager</option>
-							<option value="Cleaner">Cleaner</option>
-							<option value="Receptionist">Receptionist</option>
-						</select>
-
-						<button type="submit">Add Staff</button>
-					</form>
-
-
-				</div>
-			</section>
-		</div>
-
-		<!--Staff Section End-->
-
-
-
-
-
-
-		<!--Testimonial Section End-->
-		<!--Rooms Section Start-->
-		<section id="section-5">
-			<div class="headind-1 text-center">
-				<h3 class="title">Add Rooms</h3>
-			</div>
-			<div class="container">
-
-				<div class="row">
-					<div class="form-container">
-
-
-						<form action="addRooms" method="post">
-
-							<div class="form-group">
-								<label for="room_number">Room Number</label> <input
-									type="number" name="room_number" id="room_number"
-									placeholder="Room Number">
-							</div>
-
-							<div class="form-group">
-								<label for="room_types">Room Type</label> <select
-									name="room_types" id="room_types">
-									<option>Select Room</option>
-									<option>Single Room</option>
-									<option>Double Room</option>
-								</select>
-							</div>
-
-							<div class="form-group">
-								<label for="bed_count ">Bed Count</label> <input type="number"
-									name="bed_count" id="bed_count " placeholder="2">
-							</div>
-
-							<div class="form-group">
-								<label for="price_per_night">Price Per Night</label> <input
-									type="text" id="price_per_night" name="price_per_night"
-									placeholder="0.0000">
-							</div>
-
-							<div class="form-group">
-								<label>AC / Non-AC:</label><br> <input type="radio"
-									name="ac_type" value="AC"> AC <input type="radio"
-									name="ac_type" value="Non-AC"> Non-AC
-							</div>
-
-
-
-							<div class="form-group">
-								<label>Description:</label>
-								<textarea name="description" rows="4" cols="30"></textarea>
-							</div>
-
-							<div class="form-group">
-								<label>Room Image:</label> <input type="file"
-									name="room_image_path">
-							</div>
-
-							<div class="form-group text-center">
-								<input type="submit" value="Add Room">
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- Rooms Lists Section Start -->
-
-
-		<section id="section-10">
-			<div class="headind-1 text-center">
-				<h3 class="title">Room List</h3>
-			</div>
-			<div class="container">
-
-				<div class="row">
-					<div class="form-container"></div>
-				</div>
-			</div>
-
-		</section>
-
-		<!-- Rooms Lists Section End -->
-
-
-
-		<!--Rooms Section End-->
-
+		
+		
 		<!--Price Section Start-->
 		<section id="section-8" class="gray-bg price-table-section">
 			<div class="container">
@@ -510,38 +349,7 @@
 	</div>
 	</div>
 
-	<!-- Plugin jQuery Library -->
-	<script src="assets/js/jquery.js"></script>
-	<!-- Bootstrap jQuery Library -->
-	<script src="assets/js/bootstrap.js"></script>
-	<!-- Parallax jQuery Library -->
-	<script src="assets/js/parallax.js"></script>
-	<!-- Image Loader jQuery Library -->
-	<script src="assets/js/imageloader.js"></script>
-	<!-- Browser Detect jQuery Library -->
-	<script src="assets/js/browser-detect.js"></script>
-	<!-- Magnafic-popup jQuery Library -->
-	<script src="assets/js/magnafic-popup.js"></script>
-	<!-- Twitter jQuery Library -->
-	<script src="assets/js/twitter.js"></script>
-	<!-- Twitter jQuery Library -->
-	<script src="assets/js/flickr.js"></script>
-	<!-- Responsive Menu jQuery Library -->
-	<script src="assets/js/responsive-menu.js"></script>
-	<!-- Slick Slider jQuery Library -->
-	<script src="assets/js/slick.js"></script>
-	<!-- 3D Effect jQuery Library -->
-	<script src="assets/js/3deffect.js"></script>
-	<!-- Isotope jQuery Library -->
-	<script src="assets/js/isotope.js"></script>
-	<!-- Date Picker jQuery Library -->
-	<script src="assets/js/datepicker.js"></script>
-	<!-- Onepage Menu jQuery Library -->
-	<script src="assets/js/onepage.js"></script>
-	<!-- Form Validation jQuery Library -->
-	<script src="assets/js/formvalidation.html"></script>
-	<!-- Custom jQuery Library -->
-	<script src="assets/js/custom.js"></script>
+	
 </body>
 
 </html>
