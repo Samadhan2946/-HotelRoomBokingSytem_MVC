@@ -53,7 +53,7 @@
 				<ul>
 					<li class="active"><a href="#home">Home</a></li>
 
-					<li><a href="/staff">staff</a></li>
+					<li><a href="/addStaff">staff</a></li>
 
 					<li><a href="/addRooms">Rooms</a></li>
 					<li><a href="/rooms">Room List</a></li>

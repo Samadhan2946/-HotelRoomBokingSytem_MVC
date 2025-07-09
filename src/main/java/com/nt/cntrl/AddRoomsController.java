@@ -25,10 +25,10 @@ public class AddRoomsController {
 	@Autowired
 	private RoomService roomService;
 	
-	@GetMapping("/addRooms")
-	public String room() {
-		return "admin/addRoom";
-	}
+		@GetMapping("/addRooms")
+		public String room() {
+			return "admin/addRoom";
+		}
 
 	@PostMapping("/addRooms")
 	public void addRooms(@ModelAttribute @Valid AddRoomsRequestDto roomReqDto, Model model) {
