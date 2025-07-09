@@ -20,7 +20,14 @@ public class StaffController {
 
 	@Autowired
 	private StaffService staffService;
-
+	
+	
+	@GetMapping("/addStaff")
+	public String staff() {
+		return "admin/staff";
+	}
+	
+	
 	@PostMapping("/add-staff")
 	public void addStaffData(@ModelAttribute StaffRequestDto staffReqDto) {
 
