@@ -1,0 +1,26 @@
+.staff-table {
+	width: 100%;
+	border-collapse: collapse;
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.staff-table th, .staff-table td {
+	padding: 12px 15px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+.staff-table thead th {
+	background-color: black;
+	color: white;
+}
+
+.staff-table tbody tr:hover {
+	background-color: #f9f9f9;
+}
+
+.staff-table-container {
+	overflow-x: auto;
+	margin-top: 20px;
+}

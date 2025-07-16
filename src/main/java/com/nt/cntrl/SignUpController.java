@@ -20,7 +20,7 @@ public class SignUpController {
 
 	@GetMapping("/sign-Up")
 	public String showSignUp() {
-		return"signUp/signUp";
+		return"signUp/signUp2";
 	}
 	
 	@Autowired
@@ -29,6 +29,7 @@ public class SignUpController {
 	@PostMapping("/signUp-User")
 	public String signUpUser(@ModelAttribute @Valid SignUpRequestDto reqDto, Model model) {
 		
+		reqDto.setRole("customer");
 		
 		String data=signUpService.userSignUp(reqDto);
 		
