@@ -25,7 +25,7 @@ public class LoginController {
 		LoginResponseDto dto = loginService.loginUserService(loginDto);
 
 		if (dto == null) {
-			return "login/login";
+			return "login/login2";
 
 		}
 
@@ -34,7 +34,7 @@ public class LoginController {
 		if (dto.getRole().equals("Admin")) {
 			return "admin/index";
 		} else if (dto.getRole().equals("Customer")) {
-			return "common/footer";
+			return "adminCommon/footer";
 		} else {
 			return "login/login";
 		}

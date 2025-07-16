@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.nt.dto.StaffRequestDto;
@@ -16,19 +17,20 @@ import com.nt.dto.StaffResponseDto;
 import com.nt.service.StaffService;
 
 @Controller
+@RequestMapping("staff")
 public class StaffController {
 
 	@Autowired
 	private StaffService staffService;
 	
 	
-	@GetMapping("/addStaff")
+	@GetMapping("/add-staff")
 	public String staff() {
-		return "admin/staff";
+		return "staff/staff";
 	}
 	
 	
-	@PostMapping("/add-staff")
+	@PostMapping("/addstaff")
 	public void addStaffData(@ModelAttribute StaffRequestDto staffReqDto) {
 
 		String resfromDatabase = staffService.addStaffData(staffReqDto);
@@ -41,7 +43,7 @@ public class StaffController {
 		List<StaffResponseDto> staffResponseDtos = staffService.getStaffList();
 
 		model.addAttribute("staffList", staffResponseDtos);
-		return "admin/staffList";
+		return "staff/stafflist";
 ////		
 //		for(StaffResponseDto staff:staffResponseDtos) {
 //			System.out.println(staff.getAddress());
@@ -56,7 +58,7 @@ public class StaffController {
 
 		if (staffResponseDto != null) {
 			model.addAttribute("staff", staffResponseDto);
-			return "updateStaff";
+			return "staff/update";
 		} else {
 			model.addAttribute("msgError", "data is not found");
 			return "signUp/error";
@@ -65,6 +67,8 @@ public class StaffController {
 
 	@PostMapping("/update-staff")
 	public String updateStaffById(@ModelAttribute StaffRequestDto staffRequestDto, Model model) {
+		System.out.println(staffRequestDto.getId());
+		
 		String isUpdate = staffService.updateStaffById(staffRequestDto);
 
 		if (isUpdate != null) {

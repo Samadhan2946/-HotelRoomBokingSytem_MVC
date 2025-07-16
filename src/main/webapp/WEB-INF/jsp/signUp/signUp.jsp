@@ -44,7 +44,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-offset-4 col-md-4">
-                                <form class="chr-login" action="/signUp-User" method="post">
+                                <form class="chr-login" action="/signUp-Use" method="post">
                                     <!--Heading 1 Start-->
                                     <div class="headind-1">
                                         <h3 class="title">Create Account</h3>
