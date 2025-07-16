@@ -21,27 +21,21 @@ public class AddRoomsRequestDto {
 
 	
 	@NotNull
-	
-    private int room_number;
+	private int room_number;
 
 	@NotNull
-	
 	private String room_types;
 	
 	@NotNull
-	
 	private int bed_count ;
 
 	@NotNull
-	
-	private int price_per_night;
+	private double price_per_night;
 
 	@NotNull
-	
 	private String ac_type;
 
 	@NotNull
-	
 	private String description;
 	
 
@@ -49,7 +43,6 @@ public class AddRoomsRequestDto {
 	private String room_image_path;
 	
 	@NotNull
-	
 	private String status;
 
 }

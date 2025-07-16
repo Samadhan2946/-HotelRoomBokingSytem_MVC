@@ -102,6 +102,8 @@ public class RoomServiceImpl implements RoomService {
 	@Override
 	public AddRoomsResponseDto updateRooms(AddRoomsRequestDto reqDto) {
 		
+		System.out.println(reqDto.getDescription());
+		
 		RestTemplate templet=new RestTemplate();
 		
 		String url="http://localhost:9292/addRooms/updateRoom";
