@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<jsp:include page="../adminCommon/header.jsp" />
+<jsp:include page="../common/header.jsp" />
 
 <div class="wrapper">
 	<div class="page-wrapper">
@@ -12,8 +12,8 @@
 						<div class="card-body p-4">
 							<h5 class="mb-4">Update Staff</h5>
 
-							<!-- Updated form action using c:url -->
-							<form action="<c:url value='/staff/update-staff'/>" method="post">
+						
+							<form action="/staff/update-staff"	method="post">
 
 								<input type="hidden" name="id" value="${staff.id}" />
 
@@ -98,4 +98,4 @@
 	</div>
 </div>
 
-<jsp:include page="../adminCommon/footer.jsp" />
+<jsp:include page="../common/footer.jsp" />

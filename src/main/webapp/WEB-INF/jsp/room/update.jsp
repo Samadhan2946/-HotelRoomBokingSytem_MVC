@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<jsp:include page="../adminCommon/header.jsp" />
+<jsp:include page="../common/header.jsp" />
 
 <!--wrapper-->
 <div class="wrapper">
@@ -16,7 +16,7 @@
 							<h5 class="mb-4">Update Room</h5>
 
 
-							<form action="<c:url value='/room/update-room'/>" method="post" >
+							<form action="/room/update-room" method="post" >
 
 								
 								<input type="hidden" name="id" value="${room.id}" />
@@ -122,4 +122,4 @@
 	</div>
 </div>
 
-<jsp:include page="../adminCommon/footer.jsp" />
+<jsp:include page="../common/footer.jsp" />

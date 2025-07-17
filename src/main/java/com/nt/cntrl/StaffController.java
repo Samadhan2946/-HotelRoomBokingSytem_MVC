@@ -31,10 +31,18 @@ public class StaffController {
 	
 	
 	@PostMapping("/addstaff")
-	public void addStaffData(@ModelAttribute StaffRequestDto staffReqDto) {
+	public String addStaffData(@ModelAttribute StaffRequestDto staffReqDto,Model model) {
 
 		String resfromDatabase = staffService.addStaffData(staffReqDto);
-		System.out.println(staffReqDto.getJoiningDate());
+
+		if(resfromDatabase != null) {
+			model.addAttribute("messageSuccess", "Staff is Added");
+			return "result/success";
+		}else {
+			model.addAttribute("messageError", "Staff is not Added");
+			return "result/error";
+		}
+		
 	}
 
 	@GetMapping("/staffList")
@@ -60,8 +68,8 @@ public class StaffController {
 			model.addAttribute("staff", staffResponseDto);
 			return "staff/update";
 		} else {
-			model.addAttribute("msgError", "data is not found");
-			return "signUp/error";
+			model.addAttribute("messageError", "Staff is not found");
+			return "result/error";
 		}
 	}
 
@@ -70,15 +78,21 @@ public class StaffController {
 		System.out.println(staffRequestDto.getId());
 		
 		String isUpdate = staffService.updateStaffById(staffRequestDto);
-
-		if (isUpdate != null) {
-			model.addAttribute("msgSuccess", "Data is Updated");
-			return "admin/success";
-		} else {
-			model.addAttribute("msgError", "Data is not Updated");
-			return "admin/error";
+		
+		if(isUpdate != null) {
+			model.addAttribute("messageSuccess", "Staff is Updated");
+			return "result/success";
+		}else {
+			model.addAttribute("messageError", "Staff is not Updated");
+			return "result/error";
 		}
+		
 
+		/*
+		 * if (isUpdate != null) { model.addAttribute("msgSuccess", "Data is Updated");
+		 * return "admin/success"; } else { model.addAttribute("msgError",
+		 * "Data is not Updated"); return "admin/error"; }
+		 */
 	}
 	
 	@GetMapping("/deleteStaffById/{id}")
@@ -86,7 +100,13 @@ public class StaffController {
 		
 		String isDelete= staffService.deleteStaffById(id);
 		
-		return isDelete;
+		if(isDelete != null) {
+			model.addAttribute("messageSuccess", "Staff is Deleted");
+			return "result/success";
+		}else {
+			model.addAttribute("messageError", "Staff is not Deleted");
+			return "result/error";
+		}
 		
 		
 	}

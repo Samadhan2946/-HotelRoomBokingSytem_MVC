@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error</title>
+    <title>Success</title>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var errorMsg = '${msgError}';
-        if (errorMsg && errorMsg !== '') {
+        var successMsg = '${messageSuccess}';
+        if (successMsg && successMsg !== '') {
             Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: errorMsg,
-                footer: '<a href="#">Why do I have this issue?</a>',
+                icon: 'success',
+                title: 'Success!',
+                text: successMsg,
                 confirmButtonText: 'OK'
             }).then((result) => {
                 if (result.isConfirmed) {

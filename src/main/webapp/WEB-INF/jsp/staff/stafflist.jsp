@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<jsp:include page="../adminCommon/header.jsp" />
+<jsp:include page="../common/header.jsp" />
 
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/resource/assets/css/stafflist.css">
@@ -38,14 +38,17 @@
 										<td>${staff.joiningDate}</td>
 										<td>${staff.department}</td>
 										<td>
-											<a href="editStaff/${staff.id}" title="Edit">
-											<i class="fa-solid fa-user"></i>
-											
-												<img src="${pageContext.request.contextPath}/resource/icons/edit.png" width="20" />
-											</a>
-											<a href="deleteStaffById/${staff.id}" title="Delete">
-												<img src="${pageContext.request.contextPath}/resource/icons/delete.png" width="20" />
-											</a>
+											<!-- Edit Icon --> 
+											<a href="/staff/editStaff/${staff.id}"> <i class="fas fa-edit text-primary"
+												style="font-size: 18px;"></i>
+												
+												
+										</a> <!-- Delete Icon --> <a
+											href="/staff/deleteStaffById/${staff.id}"> <i class="fas fa-trash-alt text-danger"
+												style="font-size: 18px;"></i>
+										</a>
+
+
 										</td>
 									</tr>
 								</c:forEach>
@@ -58,4 +61,4 @@
 	</div>
 </div>
 
-<jsp:include page="../adminCommon/footer.jsp" />
+<jsp:include page="../common/footer.jsp" />

@@ -10,20 +10,20 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--favicon-->
-	<link rel="icon" href="resource/images/favicon-32x32.png" type="image/png" />
+	<link rel="icon" href="resource/assets/images/favicon-32x32.png" type="image/png" />
 	<!--plugins-->
-	<link href="resource/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
-	<link href="resource/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
-	<link href="resource/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
+	<link href="resource/assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
+	<link href="resource/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+	<link href="resource/assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
 	<!-- loader-->
-	<link href="resource/css/pace.min.css" rel="stylesheet" />
-	<script src="resource/js/pace.min.js"></script>
+	<link href="resource/assets/css/pace.min.css" rel="stylesheet" />
+	<script src="resource/assets/js/pace.min.js"></script>
 	<!-- Bootstrap CSS -->
-	<link href="resource/css/bootstrap.min.css" rel="stylesheet">
-	<link href="resource/css/bootstrap-extended.css" rel="stylesheet">
+	<link href="resource/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="resource/assets/css/bootstrap-extended.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet">
-	<link href="resource/css/app.css" rel="stylesheet">
-	<link href="resource/css/icons.css" rel="stylesheet">
+	<link href="resource/assets/css/app.css" rel="stylesheet">
+	<link href="resource/assets/css/icons.css" rel="stylesheet">
 	<title>Rocker - Bootstrap 5 Admin Dashboard Template</title>
 </head>
 
@@ -76,7 +76,7 @@
 													<option value="2">America</option>
 													<option value="3">Dubai</option>
 												</select>
-											</div> --> -->
+											</div> --> 
 											<!-- <div class="col-12">
 												<div class="form-check form-switch">
 													<input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
@@ -108,12 +108,12 @@
 	</div>
 	<!--end wrapper-->
 	<!-- Bootstrap JS -->
-	<script src="resource/js/bootstrap.bundle.min.js"></script>
+	<script src="resource/assets/js/bootstrap.bundle.min.js"></script>
 	<!--plugins-->
-	<script src="resource/js/jquery.min.js"></script>
-	<script src="resource/plugins/simplebar/js/simplebar.min.js"></script>
-	<script src="resource/plugins/metismenu/js/metisMenu.min.js"></script>
-	<script src="resource/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script src="resource/assets/js/jquery.min.js"></script>
+	<script src="resource/assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="resource/assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="resource/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 	<!--Password show & hide js -->
 	<script>
 		$(document).ready(function () {
