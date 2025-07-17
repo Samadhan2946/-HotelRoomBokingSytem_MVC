@@ -2,7 +2,7 @@
 	pageEncoding="ISO-8859-1"%>
 
 	
-<jsp:include page="../adminCommon/header.jsp" />
+<jsp:include page="../common/header.jsp" />
 
 <div class="wrapper">
 	<div class="page-wrapper">
@@ -106,4 +106,4 @@
 </div>
 
 
-<jsp:include page="../adminCommon/footer.jsp" />
+<jsp:include page="../common/footer.jsp" />

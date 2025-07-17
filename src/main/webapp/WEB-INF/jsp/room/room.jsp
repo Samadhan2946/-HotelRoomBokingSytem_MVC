@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-
-<jsp:include page="../adminCommon/header.jsp"/>
+<jsp:include page="../common/header.jsp"/>
 
 <!--start page wrapper -->
 <div class="page-wrapper">
@@ -11,14 +10,14 @@
                 <div class="card">
                     <div class="card-body p-4">
                         <h5 class="mb-4">Add Room</h5>
-                        <form class="row g-3" action="addRooms" method="post" enctype="multipart/form-data">
+                        <form class="row g-3" action="addRooms" method="post" >
 
                             <!-- Room Number -->
                             <div class="col-md-12">
                                 <label for="room_number" class="form-label">Room Number</label>
                                 <div class="position-relative input-icon">
                                     <input type="text" name="room_number" class="form-control" id="room_number" placeholder="Room Number">
-                                    <span class="fa fa-door-open position-absolute top-50 translate-middle-y end-0 me-3"></span>
+                                    
                                 </div>
                             </div>
 
@@ -31,7 +30,6 @@
                                         <option>Single Room</option>
                                         <option>Double Room</option>
                                     </select>
-                                    <span class="fa fa-list-ul position-absolute top-50 translate-middle-y end-0 me-3"></span>
                                 </div>
                             </div>
 
@@ -40,7 +38,6 @@
                                 <label for="bed_count" class="form-label">Bed Count</label>
                                 <div class="position-relative input-icon">
                                     <input type="text" name="bed_count" class="form-control" id="bed_count" placeholder="Bed Count">
-                                    <span class="fa fa-bed position-absolute top-50 translate-middle-y end-0 me-3"></span>
                                 </div>
                             </div>
 
@@ -49,7 +46,6 @@
                                 <label for="price_per_night" class="form-label">Price Per Night</label>
                                 <div class="position-relative input-icon">
                                     <input type="text" name="price_per_night" class="form-control" id="price_per_night" placeholder="Price">
-                                    <span class="fa fa-indian-rupee-sign position-absolute top-50 translate-middle-y end-0 me-3"></span>
                                 </div>
                             </div>
 
@@ -59,7 +55,7 @@
                                 <div class="position-relative input-icon">
                                     <input type="radio" name="ac_type" value="AC"> AC
                                     <input type="radio" name="ac_type" value="Non-AC" class="ms-3"> Non-AC
-                                    <span class="fa fa-wind position-absolute top-50 translate-middle-y end-0 me-3"></span>
+
                                 </div>
                             </div>
 
@@ -97,4 +93,4 @@
     </div>
 </div>
 
-<jsp:include page="../adminCommon/footer.jsp" />
+<jsp:include page="../common/footer.jsp" />

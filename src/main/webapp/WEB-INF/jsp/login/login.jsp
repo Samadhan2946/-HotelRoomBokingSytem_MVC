@@ -47,7 +47,7 @@
 							<div class="card-body">
 								<div class="p-4">
 									<div class="mb-3 text-center">
-										<img src="assets/images/logo-icon.png" width="60" alt="" />
+										<img src="resource/assets/images/logo-icon.png" width="60" alt="" />
 									</div>
 									<div class="text-center mb-4">
 										<h5 class="">Rocker Admin</h5>
@@ -123,13 +123,13 @@
 	</div>
 	<!--end wrapper-->
 	<!-- Bootstrap JS -->
-	<script src="resource/js/bootstrap.bundle.min.js"></script>
+	<script src="resource/assets/js/bootstrap.bundle.min.js"></script>
 	<!--plugins-->
-	<script src="resource/js/jquery.min.js"></script>
-	<script src="resource/plugins/simplebar/js/simplebar.min.js"></script>
-	<script src="resource/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script src="resource/assets/js/jquery.min.js"></script>
+	<script src="resource/assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script src="resource/assets/plugins/metismenu/js/metisMenu.min.js"></script>
 	<script
-		src="resource/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+		src="resource/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 	<!--Password show & hide js -->
 	<script>
 		$(document).ready(
@@ -161,7 +161,7 @@
 				});
 	</script>
 	<!--app JS-->
-	<script src="resource/js/app.js"></script>
+	<script src="resource/assets/js/app.js"></script>
 </body>
 
 

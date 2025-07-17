@@ -1,4 +1,4 @@
-package com.nt.cntrl;
+ package com.nt.cntrl;
 
 import java.util.List;
 
@@ -31,13 +31,23 @@ public class RoomsController {
 	}
 
 	@PostMapping("/addRooms")
-	public void addRooms(@ModelAttribute @Valid AddRoomsRequestDto roomReqDto, Model model) {
-		roomReqDto.setStatus("Available");
-		roomService.addRoom(roomReqDto);
+	public String addRooms(@ModelAttribute @Valid AddRoomsRequestDto roomReqDto, Model model) {
+	    roomReqDto.setStatus("Available");
+	    String roomAdded = roomService.addRoom(roomReqDto);
+
+	    if (roomAdded.equals(roomAdded)) { 
+	        model.addAttribute("messageSuccess", "Room is Added");
+	        return "result/success";
+	    } else {
+	        model.addAttribute("messageError", "Room is not Added");
+	        return "result/error";
+	    }
+	}
+
 
 //		
 
-	}
+	
 
 	@GetMapping("/room-list")
 	public String getRoomList(Model model) {
@@ -56,8 +66,8 @@ public class RoomsController {
 			model.addAttribute("room", resDto);
 			return "room/update";
 		} else {
-			model.addAttribute("msgError", "data is not found");
-			return "signUp/error";
+			model.addAttribute("messageError", "Room is not found");
+			return "result/error";
 		}
 	}
 
@@ -68,11 +78,11 @@ public class RoomsController {
 		AddRoomsResponseDto resDto = roomService.updateRooms(reqDto);
 
 		if (resDto != null) {
-			model.addAttribute("msgSuccess", "Data is Updated");
-			return "admin/success";
+			model.addAttribute("messageSuccess", "Room is Updated");
+			return "result/success";
 		} else {
-			model.addAttribute("msgError", "Data is not Updated");
-			return "admin/error";
+			model.addAttribute("messageError", "Room is not Updated");
+			return "result/error";
 		}
 
 	}
@@ -83,11 +93,11 @@ public class RoomsController {
 		String roomDeleted = roomService.deleteRoom(id);
 
 		if (roomDeleted != null) {
-			model.addAttribute("msgSuccess", "Data is Deleted");
-			return "admin/success";
+			model.addAttribute("messageSuccess", "Room is Deleted");
+			return "result/success";
 		} else {
-			model.addAttribute("msgError", "Data is not  Deleted");
-			return "admin/error";
+			model.addAttribute("messageError", "Room is not  Deleted");
+			return "result/error";
 		}
 
 	}
