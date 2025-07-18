@@ -14,7 +14,7 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SignUpRequestDto {
+public class UserRequestDto {
 	
 
 

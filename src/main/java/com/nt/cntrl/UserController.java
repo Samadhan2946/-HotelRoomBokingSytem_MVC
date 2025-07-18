@@ -12,34 +12,34 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.nt.dto.SignUpRequestDto;
-import com.nt.service.SignUpService;
+import com.nt.dto.UserRequestDto;
+import com.nt.service.UserService;
 
 @Controller
-public class SignUpController {
+public class UserController {
 
-	@GetMapping("/sign-Up")
+	@GetMapping("/user")
 	public String showSignUp() {
-		return"signUp/signUp2";
+		return"user/user";
 	}
 	
 	@Autowired
-	private SignUpService signUpService;
+	private UserService userService;
 	
 	@PostMapping("/signUp-User")
-	public String signUpUser(@ModelAttribute @Valid SignUpRequestDto reqDto, Model model) {
+	public String signUpUser(@ModelAttribute @Valid UserRequestDto userRequestDto, Model model) {
 		
-		reqDto.setRole("customer");
+		userRequestDto.setRole("customer");
 		
-		String data=signUpService.userSignUp(reqDto);
+		String data=userService.userSignUp(userRequestDto);
 		
 		if(data!=null) {
-			model.addAttribute("msgSuccess","Data is Added Successfully");
-			return "signUp/success";
+			model.addAttribute("messageSuccess","SignUp is Successfull");
+			return "result/success";
 			
 		}else {
-			model.addAttribute("msgError","Data is Not Added Successfully");
-			return "signUp/error";
+			model.addAttribute("messageError","SignUp is Not Successfull");
+			return "result/error";
 		}
 	}
 }

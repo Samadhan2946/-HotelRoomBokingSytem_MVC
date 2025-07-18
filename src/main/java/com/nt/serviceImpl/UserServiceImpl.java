@@ -7,14 +7,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.nt.dto.SignUpRequestDto;
-import com.nt.service.SignUpService;
+import com.nt.dto.UserRequestDto;
+import com.nt.service.UserService;
 
 @Service
-public class SignUpServiceImpl implements SignUpService {
+public class UserServiceImpl implements UserService {
 
 	@Override
-	public String userSignUp(SignUpRequestDto reqDto) {
+	public String userSignUp(UserRequestDto userRequestDto) {
 		
 		
 		RestTemplate templet=new RestTemplate();
@@ -24,7 +24,7 @@ public class SignUpServiceImpl implements SignUpService {
 		HttpHeaders header=new HttpHeaders();
 		header.setContentType(MediaType.APPLICATION_JSON);
 		
-		HttpEntity<SignUpRequestDto> reqEntity=new HttpEntity<SignUpRequestDto>(reqDto ,header);
+		HttpEntity<UserRequestDto> reqEntity=new HttpEntity<UserRequestDto>(userRequestDto ,header);
 		
 		ResponseEntity<String> result=templet.postForEntity(url, reqEntity, String.class);
 		return result.getBody();
