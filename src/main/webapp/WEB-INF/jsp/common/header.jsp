@@ -59,8 +59,11 @@
 	href="${pageContext.request.contextPath}/resource/assets/css/semi-dark.css" />
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/resource/assets/css/header-colors.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-H1+8eS1ZfKbD28UnuhYht+TycbNkNBSNZF9..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+	integrity="sha512-H1+8eS1ZfKbD28UnuhYht+TycbNkNBSNZF9..."
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 <body>
@@ -70,7 +73,9 @@
 		<div class="sidebar-wrapper" data-simplebar="true">
 			<div class="sidebar-header">
 				<div>
-					<img src="${pageContext.request.contextPath}/resource/assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+					<img
+						src="${pageContext.request.contextPath}/resource/assets/images/logo-icon.png"
+						class="logo-icon" alt="logo icon">
 
 				</div>
 				<div>
@@ -93,8 +98,8 @@
 								class='bx bx-radio-circle'></i>Add Room</a></li>
 						<li><a href="/room/room-list"><i
 								class='bx bx-radio-circle'></i>Select All</a></li>
-						<li><a href="index3.html"><i class='bx bx-radio-circle'></i>Graphical</a>
-						</li>
+						<li><a href="index3.html"><i class='bx bx-radio-circle'></i>Assign
+								Room</a></li>
 					</ul></li>
 				<li><a href="javascript:;" class="has-arrow">
 						<div class="parent-icon">
@@ -109,11 +114,11 @@
 								class='bx bx-radio-circle'></i>Select All</a></li>
 						<li><a href="app-file-manager.html"><i
 								class='bx bx-radio-circle'></i>File Manager</a></li>
-						
+
 					</ul></li>
-					
-					
-					<li><a href="javascript:;" class="has-arrow">
+
+
+				<li><a href="javascript:;" class="has-arrow">
 						<div class="parent-icon">
 							<i class="bx bx-category"></i>
 						</div>
@@ -126,10 +131,26 @@
 								class='bx bx-radio-circle'></i>Select All</a></li>
 						<li><a href="app-file-manager.html"><i
 								class='bx bx-radio-circle'></i>File Manager</a></li>
-								
-								</ul>
-								</li>
-								
+
+					</ul></li>
+
+				<li><a href="javascript:;" class="has-arrow">
+						<div class="parent-icon">
+							<i class="bx bx-category"></i>
+						</div>
+						<div class="menu-title">Book Now</div>
+				</a>
+					<ul>
+						<li><a href="/roomBook/singleRoomList"><i
+								class='bx bx-radio-circle'></i>Single Room</a></li>
+						<li><a href="/roomBook/doubleRoomList"><i
+								class='bx bx-radio-circle'></i>Double Room</a></li>
+						<li><a href="app-file-manager.html"><i
+								class='bx bx-radio-circle'></i>File Manager</a></li>
+
+					</ul></li>
+					
+
 				<li class="menu-label">UI Elements</li>
 				<li><a href="widgets.html">
 						<div class="parent-icon">
@@ -1119,25 +1140,35 @@
 
 
 	<!-- Bootstrap JS -->
-<!-- Bootstrap Bundle JS -->
-<script src="${pageContext.request.contextPath}/assets/js/bootstrap.bundle.min.js"></script>
+	<!-- Bootstrap Bundle JS -->
+	<script
+		src="${pageContext.request.contextPath}/assets/js/bootstrap.bundle.min.js"></script>
 
-<!-- Plugins -->
-<script src="${pageContext.request.contextPath}/resource/assets/js/jquery.min.js"></script>
-<script src="${pageContext.request.contextPath}/resource/assets/plugins/simplebar/js/simplebar.min.js"></script>
-<script src="${pageContext.request.contextPath}/resource/assets/plugins/metismenu/js/metisMenu.min.js"></script>
-<script src="${pageContext.request.contextPath}/resource/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-<script src="${pageContext.request.contextPath}/resource/assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
-<script src="${pageContext.request.contextPath}/resource/assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-<script src="${pageContext.request.contextPath}/resource/assets/plugins/chartjs/js/chart.js"></script>
-<script src="${pageContext.request.contextPath}/resource/assets/js/index.js"></script>
+	<!-- Plugins -->
+	<script
+		src="${pageContext.request.contextPath}/resource/assets/js/jquery.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resource/assets/plugins/simplebar/js/simplebar.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resource/assets/plugins/metismenu/js/metisMenu.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resource/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resource/assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resource/assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resource/assets/plugins/chartjs/js/chart.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/resource/assets/js/index.js"></script>
 
-<!-- App JS -->
-<script src="${pageContext.request.contextPath}/resource/assets/js/app.js"></script>
+	<!-- App JS -->
+	<script
+		src="${pageContext.request.contextPath}/resource/assets/js/app.js"></script>
 
-<script>
-    new PerfectScrollbar(".app-container");
-</script>
+	<script>
+		new PerfectScrollbar(".app-container");
+	</script>
 
 
 </body>
