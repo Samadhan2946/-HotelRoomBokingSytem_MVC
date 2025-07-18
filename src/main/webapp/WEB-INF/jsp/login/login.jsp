@@ -104,7 +104,7 @@
 												<div class="text-center ">
 													<p class="mb-0">
 														Don't have an account yet? <a
-															href="sign-Up">Sign up here</a>
+															href="user">Sign up here</a>
 													</p>
 												</div>
 											</div>
