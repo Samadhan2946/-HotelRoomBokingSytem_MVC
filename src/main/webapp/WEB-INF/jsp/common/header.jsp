@@ -109,15 +109,27 @@
 								class='bx bx-radio-circle'></i>Select All</a></li>
 						<li><a href="app-file-manager.html"><i
 								class='bx bx-radio-circle'></i>File Manager</a></li>
-						<li><a href="app-contact-list.html"><i
-								class='bx bx-radio-circle'></i>Contatcs</a></li>
-						<li><a href="app-to-do.html"><i
-								class='bx bx-radio-circle'></i>Todo List</a></li>
-						<li><a href="app-invoice.html"><i
-								class='bx bx-radio-circle'></i>Invoice</a></li>
-						<li><a href="app-fullcalender.html"><i
-								class='bx bx-radio-circle'></i>Calendar</a></li>
+						
 					</ul></li>
+					
+					
+					<li><a href="javascript:;" class="has-arrow">
+						<div class="parent-icon">
+							<i class="bx bx-category"></i>
+						</div>
+						<div class="menu-title">Customer</div>
+				</a>
+					<ul>
+						<li><a href="/customer/add-customer"><i
+								class='bx bx-radio-circle'></i>Add Customer</a></li>
+						<li><a href="/customer/customer-list"><i
+								class='bx bx-radio-circle'></i>Select All</a></li>
+						<li><a href="app-file-manager.html"><i
+								class='bx bx-radio-circle'></i>File Manager</a></li>
+								
+								</ul>
+								</li>
+								
 				<li class="menu-label">UI Elements</li>
 				<li><a href="widgets.html">
 						<div class="parent-icon">
