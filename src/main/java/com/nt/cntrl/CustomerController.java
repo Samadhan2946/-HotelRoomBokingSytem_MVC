@@ -39,10 +39,10 @@ public class CustomerController {
 
 		if (customerAdded != null) {
 			model.addAttribute("messageSuccess", "Customer is Added");
-			return "result/success";
+			return "customer/success";
 		} else {
 			model.addAttribute("messageError", "Customer is not Added");
-			return "result/error";
+			return "customer/error";
 		}
 	}
 
@@ -64,7 +64,7 @@ public class CustomerController {
 			return "customer/update";
 		} else {
 			model.addAttribute("messageError", "Customer is not found");
-			return "result/error";
+			return "customer/error";
 		}
 
 	}
@@ -78,10 +78,10 @@ public class CustomerController {
 
 		if (customerResponseDto != null) {
 			model.addAttribute("messageSuccess", "Customer is Updated");
-			return "result/success";
+			return "customer/success";
 		} else {
 			model.addAttribute("messageError", "Customer is not Updated");
-			return "result/error";
+			return "customer/error";
 		}
 
 	}
@@ -94,10 +94,10 @@ public class CustomerController {
 
 		if (customerDeleted != null) {
 			model.addAttribute("messageSuccess", "Customer is Deleted");
-			return "result/success";
+			return "customer/success";
 		} else {
 			model.addAttribute("messageError", "Customer is not  Deleted");
-			return "result/error";
+			return "customer/error";
 		}
 
 	}

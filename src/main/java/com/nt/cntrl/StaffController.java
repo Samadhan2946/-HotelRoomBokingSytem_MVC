@@ -37,10 +37,10 @@ public class StaffController {
 
 		if(resfromDatabase != null) {
 			model.addAttribute("messageSuccess", "Staff is Added");
-			return "result/success";
+			return "staff/success";
 		}else {
 			model.addAttribute("messageError", "Staff is not Added");
-			return "result/error";
+			return "staff/error";
 		}
 		
 	}
@@ -69,7 +69,7 @@ public class StaffController {
 			return "staff/update";
 		} else {
 			model.addAttribute("messageError", "Staff is not found");
-			return "result/error";
+			return "staff/error";
 		}
 	}
 
@@ -81,10 +81,10 @@ public class StaffController {
 		
 		if(isUpdate != null) {
 			model.addAttribute("messageSuccess", "Staff is Updated");
-			return "result/success";
+			return "staff/success";
 		}else {
 			model.addAttribute("messageError", "Staff is not Updated");
-			return "result/error";
+			return "staff/error";
 		}
 		
 
@@ -102,10 +102,10 @@ public class StaffController {
 		
 		if(isDelete != null) {
 			model.addAttribute("messageSuccess", "Staff is Deleted");
-			return "result/success";
+			return "staff/success";
 		}else {
 			model.addAttribute("messageError", "Staff is not Deleted");
-			return "result/error";
+			return "staff/error";
 		}
 		
 		
