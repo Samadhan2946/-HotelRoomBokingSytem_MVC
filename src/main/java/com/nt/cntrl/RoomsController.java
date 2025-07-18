@@ -37,10 +37,10 @@ public class RoomsController {
 
 	    if (roomAdded.equals(roomAdded)) { 
 	        model.addAttribute("messageSuccess", "Room is Added");
-	        return "result/success";
+	        return "room/success";
 	    } else {
 	        model.addAttribute("messageError", "Room is not Added");
-	        return "result/error";
+	        return "room/error";
 	    }
 	}
 
@@ -67,7 +67,7 @@ public class RoomsController {
 			return "room/update";
 		} else {
 			model.addAttribute("messageError", "Room is not found");
-			return "result/error";
+			return "room/error";
 		}
 	}
 
@@ -79,10 +79,10 @@ public class RoomsController {
 
 		if (resDto != null) {
 			model.addAttribute("messageSuccess", "Room is Updated");
-			return "result/success";
+			return "room/success";
 		} else {
 			model.addAttribute("messageError", "Room is not Updated");
-			return "result/error";
+			return "room/error";
 		}
 
 	}
@@ -94,10 +94,10 @@ public class RoomsController {
 
 		if (roomDeleted != null) {
 			model.addAttribute("messageSuccess", "Room is Deleted");
-			return "result/success";
+			return "room/success";
 		} else {
 			model.addAttribute("messageError", "Room is not  Deleted");
-			return "result/error";
+			return "room/error";
 		}
 
 	}
