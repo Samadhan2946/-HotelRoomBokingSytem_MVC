@@ -19,8 +19,8 @@
 					<th>Bed Count</th>
 					<th>Description</th>
 					<th>Price</th>
-
 					<th>Status</th>
+					<th>Action</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -31,7 +31,6 @@
 						<td>${room.bed_count}</td>
 						<td>${room.description}</td>
 						<td>${room.price_per_night}</td>
-
 						<td><c:choose>
 								<c:when
 									test="${fn:toUpperCase(fn:trim(room.status)) eq 'BOOKED'}">
@@ -39,6 +38,18 @@
 								</c:when>
 								<c:otherwise>
 									<span class="status-btn status-available">${room.status}</span>
+								</c:otherwise>
+							</c:choose></td>
+						<td><c:choose>
+								<c:when
+									test="${fn:toUpperCase(fn:trim(room.status)) eq 'BOOKED'}">
+									<button disabled class="booked-btn">Room is Booked</button>
+								</c:when>
+								<c:otherwise>
+									<a
+										href="bookNow?roomId=${room.id}"
+										class="book-now-btn">Book Now</a>
+
 								</c:otherwise>
 							</c:choose></td>
 					</tr>

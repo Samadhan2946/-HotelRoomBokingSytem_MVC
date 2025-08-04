@@ -17,7 +17,7 @@
                 confirmButtonText: 'OK'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    // Redirect to customer list after success message
+                   
                     window.location.href = '${pageContext.request.contextPath}/staff/staffList';
                 }
             });
