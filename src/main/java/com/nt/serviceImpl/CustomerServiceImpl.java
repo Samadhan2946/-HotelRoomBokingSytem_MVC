@@ -48,25 +48,26 @@ public class CustomerServiceImpl implements CustomerService {
 
 	@Override
 	public List<CustomerResponseDto> getCustomerList() {
-		
-		RestTemplate templet=new RestTemplate();
-		
-		String url="http://localhost:9292/customer/customerList";
-		
-		HttpHeaders header=new HttpHeaders();
-		
-		HttpEntity<String> entity=new HttpEntity<String>(header);
-		
-		ParameterizedTypeReference<List<CustomerResponseDto>> responseType=new ParameterizedTypeReference<List<CustomerResponseDto>>() {
+
+		RestTemplate templet = new RestTemplate();
+
+		String url = "http://localhost:9292/customer/customerList";
+
+		HttpHeaders header = new HttpHeaders();
+
+		HttpEntity<String> entity = new HttpEntity<String>(header);
+
+		ParameterizedTypeReference<List<CustomerResponseDto>> responseType = new ParameterizedTypeReference<List<CustomerResponseDto>>() {
 		};
-		
-		try{
-			ResponseEntity<List<CustomerResponseDto>> result=templet.exchange(url, HttpMethod.GET,entity,responseType);
+
+		try {
+			ResponseEntity<List<CustomerResponseDto>> result = templet.exchange(url, HttpMethod.GET, entity,
+					responseType);
 			return result.getBody();
-		}catch(Exception e){
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
+
 		return null;
 	}
 
@@ -74,60 +75,58 @@ public class CustomerServiceImpl implements CustomerService {
 	public CustomerResponseDto getCustomer(int id) {
 		RestTemplate restTemplate = new RestTemplate();
 
-		   
-	    String url = "http://localhost:9292/customer/getCustomerById?id=" + id;
+		String url = "http://localhost:9292/customer/getCustomerById?id=" + id;
 
-	    try {
-	        
-	        ResponseEntity<CustomerResponseDto> result =
-	            restTemplate.getForEntity(url, CustomerResponseDto.class);
+		try {
 
-	        return result.getBody();
+			ResponseEntity<CustomerResponseDto> result = restTemplate.getForEntity(url, CustomerResponseDto.class);
 
-	    } catch (Exception e) {
-	        System.out.println("Error: " + e.getMessage());
-	    }
+			return result.getBody();
 
-	    return null;
+		} catch (Exception e) {
+			System.out.println("Error: " + e.getMessage());
+		}
+
+		return null;
 	}
 
 	@Override
 	public CustomerResponseDto updateCustomer(CustomerRequestDto customerRequestDto) {
-           RestTemplate templet=new RestTemplate();
-		
-		String url="http://localhost:9292/customer/updateCustomer";
-		
-		HttpHeaders header=new HttpHeaders();
+		RestTemplate templet = new RestTemplate();
+
+		String url = "http://localhost:9292/customer/updateCustomer";
+
+		HttpHeaders header = new HttpHeaders();
 		header.setContentType(MediaType.APPLICATION_JSON);
-		
-		HttpEntity<CustomerRequestDto> entity=new HttpEntity<CustomerRequestDto>(customerRequestDto, header);
-		
+
+		HttpEntity<CustomerRequestDto> entity = new HttpEntity<CustomerRequestDto>(customerRequestDto, header);
+
 		try {
-			ResponseEntity<CustomerResponseDto> result=templet.postForEntity(url, entity, CustomerResponseDto.class);
+			ResponseEntity<CustomerResponseDto> result = templet.postForEntity(url, entity, CustomerResponseDto.class);
 			return result.getBody();
-		}catch (Exception e) {
+		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e.getMessage());
 		}
-		
+
 		return null;
-		
+
 	}
 
 	@Override
- 	public String deleteCustomer(Long id) {
-           RestTemplate template = new RestTemplate();
-	    
-	    String url = "http://localhost:9292/customer/deleteCustomer?id=" + id; 
+	public String deleteCustomer(Long id) {
+		RestTemplate template = new RestTemplate();
 
-	    try {
-	        ResponseEntity<String> result = template.getForEntity(url, String.class); 
-	        return result.getBody();
-	    } catch (Exception e) {
-	        System.out.println(e.getMessage());
-	    }
+		String url = "http://localhost:9292/customer/deleteCustomer?id=" + id;
 
-	    return null;
-	} 
+		try {
+			ResponseEntity<String> result = template.getForEntity(url, String.class);
+			return result.getBody();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+		return null;
 	}
-	
+
+}
