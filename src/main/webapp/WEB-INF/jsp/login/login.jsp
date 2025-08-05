@@ -70,7 +70,7 @@
 														class="input-group-text bg-transparent"><i
 														class='bx bx-hide'></i></a>
 												</div>
-
+<!-- 
 												<div class="col-12">
 													<label for="inputCountry" class="form-label">Select
 														Role</label> <select class="form-select" id="role" name="role">
@@ -79,7 +79,7 @@
 														<option value="2">Customer</option>
 													</select>
 												</div>
-
+ -->
 
 											</div>
 											<div class="col-md-6">
@@ -100,14 +100,14 @@
 														in</button>
 												</div>
 											</div>
-											<div class="col-12">
+											<!-- <div class="col-12">
 												<div class="text-center ">
 													<p class="mb-0">
 														Don't have an account yet? <a
 															href="user">Sign up here</a>
 													</p>
 												</div>
-											</div>
+											</div> -->
 										</form>
 									</div>
 
