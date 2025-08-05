@@ -15,31 +15,30 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserRequestDto {
-	
 
+	private int id;
 
 	@NotNull
-	@Size(max=32)
+	@Size(max = 32)
 	private String firstName;
-	
+
 	@NotNull
-	@Size(max=32)
+	@Size(max = 32)
 	private String lastName;
-	
+
 	@NotNull
-	@Size(max=32)
+	@Size(max = 32)
 	private String mobile;
-	
+
 	@NotNull
-	@Size(max=32)
+	@Size(max = 32)
 	private String email;
-	
+
 	@NotNull
-	@Size(max=32)
+	@Size(max = 32)
 	private String password;
-	
+
 	@NotNull
 	private String role;
-	
-	
+
 }
