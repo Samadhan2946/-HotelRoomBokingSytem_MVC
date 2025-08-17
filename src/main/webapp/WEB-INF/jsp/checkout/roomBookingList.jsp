@@ -26,34 +26,20 @@
 			</thead>
 			<tbody>
 				<c:forEach var="booking" items="${bookingList}">
-					<tr>
-						<td>${booking.id}</td>
-						<td>${booking.fullName}</td>
-						<td>${booking.roomId}</td>
-						<td>${booking.bedCount}</td>
-						<td>${booking.pricePerNight}</td>
-						<td> ${booking.status}</td>
-						<td>${booking.booking_date}</td>
-						<td>
-						<a href="${pageContext.request.contextPath}/checkout?id=${booking.id}" class="book-now-btn">Check Out</a>
-
-						</td>
-						
-						<%-- <td>
-							<c:choose>
-								<c:when test="${fn:toUpperCase(fn:trim(booking.status)) eq 'BOOKED'}">
-									<span class="status-btn status-booked">${booking.status}</span>
-								</c:when>
-								<c:otherwise>
-									<span class="status-btn status-available">${booking.status}</span>
-								</c:otherwise>
-							</c:choose>
-						</td> --%>
-						
-						
-									
-							
-					</tr>
+					<c:if test="${booking.status eq 'BOOKED'}">
+						<tr>
+							<td>${booking.id}</td>
+							<td>${booking.fullName}</td>
+							<td>${booking.roomId}</td>
+							<td>${booking.bedCount}</td>
+							<td>${booking.pricePerNight}</td>
+							<td>${booking.status}</td>
+							<td>${booking.booking_date}</td>
+							<td>
+								<a href="${pageContext.request.contextPath}/checkout?id=${booking.id}" class="book-now-btn">Check Out</a>
+							</td>
+						</tr>
+					</c:if>
 				</c:forEach>
 			</tbody>
 		</table>

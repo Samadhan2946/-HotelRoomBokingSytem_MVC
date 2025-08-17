@@ -14,6 +14,7 @@
         <table>
             <thead>
                 <tr>
+                <th>Booking Id</th>
                     <th>Customer Name</th>
                     <th>Room Type</th>
                     <th>Booking Date</th>
@@ -27,6 +28,7 @@
             <tbody>
                 <c:if test="${not empty checkOut}">
                     <tr>
+                    <td>${checkOut.id}</td>
                         <td>${checkOut.customerName}</td>
                         <td>${checkOut.roomType}</td>
                         <td>${checkOut.bookingDate}</td>
@@ -37,6 +39,7 @@
                         <td>
                             <!-- Form to submit all checkout data -->
                             <form action="${pageContext.request.contextPath}/checkout/saveCheckout" method="post">
+                                <input type="hidden" name="id" value="${checkOut.id}" />
                                 <input type="hidden" name="customerName" value="${checkOut.customerName}" />
                                 <input type="hidden" name="roomType" value="${checkOut.roomType}" />
                                 <input type="hidden" name="bookingDate" value="${checkOut.bookingDate}" />
