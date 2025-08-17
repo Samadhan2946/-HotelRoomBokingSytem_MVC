@@ -54,7 +54,7 @@ public class UserController {
 
 		} else {
 
-			session.setAttribute("UserId", dto.getId());
+			session.setAttribute("UserId", dto.getId()); 
 			session.setAttribute("userId", dto.getEmail());
 
 			return "admin/index";

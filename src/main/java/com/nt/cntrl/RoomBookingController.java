@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.nt.dto.AddRoomsResponseDto;
 import com.nt.dto.CustomerResponseDto;
 import com.nt.dto.RoomBookingRequestDto;
+import com.nt.dto.RoomBookingResponseDto;
 import com.nt.service.CustomerService;
 import com.nt.service.RoomBookingService;
 
@@ -56,9 +57,26 @@ public class RoomBookingController {
 	}
 
 	@PostMapping("/confirmBooking")
-	public void bookRoomNow(@ModelAttribute RoomBookingRequestDto roomBookingRequestDto,  Model model) {
-		System.out.println(roomBookingRequestDto.getId());
-		String isAdded = roomBookingService.bookRoomNow(roomBookingRequestDto);
+	public String bookRoomNow(@ModelAttribute RoomBookingRequestDto roomBookingRequestDto, Model model) {
+	    
+	    String isBooked = roomBookingService.bookRoomNow(roomBookingRequestDto);
+
+	    if (isBooked != null && isBooked.equals("success")) {
+	        model.addAttribute("messageSuccess", "Room is Booked Successfully!");
+	        return "roomBook/success";  
+	    } else {
+	        model.addAttribute("messageError", "Room Booking Failed!");
+	        return "roomBook/error";     
+	    }
+	}
+
+	
+	@GetMapping("/bookingList")
+	public String roomBookingList(Model model) {
+		List<RoomBookingResponseDto> roomBookingResponseDtos = roomBookingService.roomBookingList();
+
+		model.addAttribute("bookingList", roomBookingResponseDtos);
+		return "checkout/roomBookingList";
 
 	}
 

@@ -41,16 +41,16 @@
 									<span class="status-btn status-available">${room.status}</span>
 								</c:otherwise>
 							</c:choose></td>
-						<td><c:choose>
+						<td><c:choose> 
 								<c:when
 									test="${fn:toUpperCase(fn:trim(room.status)) eq 'BOOKED'}">
-									<button disabled class="booked-btn">Room is Booked</button>
+									<a href="${pageContext.request.contextPath}/checkout?id=${room.id}">Checkout</a>
+
+
 								</c:when>
 								<c:otherwise>
-									<a
-										href="bookNow?roomId=${room.id}"
-										class="book-now-btn">Book Now</a>
-
+									<a href="bookNow?roomId=${room.id}" class="book-now-btn">Book
+										Now</a>
 								</c:otherwise>
 							</c:choose></td>
 					</tr>
