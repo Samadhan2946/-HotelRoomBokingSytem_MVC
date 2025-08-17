@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ConfirmCheckOutRequestDto {
+	private Long id;
 
 	private String customerName;
 	private String roomType;

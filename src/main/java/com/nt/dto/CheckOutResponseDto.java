@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CheckOutResponseDto {
 	
-	private Long bookingId;
+	private Long id;
 	private String customerName;
 	private String roomType;
 	private LocalDate bookingDate;
