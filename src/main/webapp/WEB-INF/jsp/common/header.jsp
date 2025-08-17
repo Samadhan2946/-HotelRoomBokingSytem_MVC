@@ -150,6 +150,19 @@
 
 					</ul></li>
 					
+					<li><a href="javascript:;" class="has-arrow">
+						<div class="parent-icon">
+							<i class="bx bx-category"></i>
+						</div>
+						<div class="menu-title">Check Out</div>
+				</a>
+					<ul>
+						<li><a href="/roomBook/bookingList"><i
+								class='bx bx-radio-circle'></i>Checkout Now</a></li>
+						
+					</ul></li>
+					
+					
 
 				<li class="menu-label">UI Elements</li>
 				<li><a href="widgets.html">

@@ -15,6 +15,7 @@ import com.nt.dto.AddRoomsRequestDto;
 import com.nt.dto.AddRoomsResponseDto;
 import com.nt.dto.CustomerResponseDto;
 import com.nt.dto.RoomBookingRequestDto;
+import com.nt.dto.RoomBookingResponseDto;
 import com.nt.service.RoomBookingService;
 
 @Service
@@ -117,6 +118,30 @@ public class RoomBookingServiceImpl implements RoomBookingService {
 		
 			
 		}
+
+
+		@Override
+		public List<RoomBookingResponseDto> roomBookingList() {
+			RestTemplate templet = new RestTemplate();
+
+			String url = "http://localhost:9292/roomBooking/getAllBookings";
+
+			HttpHeaders header = new HttpHeaders();
+
+			HttpEntity<String> entity = new HttpEntity<String>(header);
+
+			ParameterizedTypeReference<List<RoomBookingResponseDto>> responseType = new ParameterizedTypeReference<List<RoomBookingResponseDto>>() {
+			};
+
+			try {
+				ResponseEntity<List<RoomBookingResponseDto>> result = templet.exchange(url, HttpMethod.GET, entity,
+						responseType);
+				return result.getBody();
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
+
+			return null;
 		}
-	
+}
 	
