@@ -25,9 +25,6 @@ public class RoomBookingController {
 	@Autowired
 	private RoomBookingService roomBookingService;
 
-	@Autowired
-	private CustomerService customerService;
-
 	@GetMapping("/singleRoomList")
 	public String getSingleRoomList(Model model) {
 		List<AddRoomsResponseDto> resDto = roomBookingService.getSingleRoomList();
@@ -58,19 +55,18 @@ public class RoomBookingController {
 
 	@PostMapping("/confirmBooking")
 	public String bookRoomNow(@ModelAttribute RoomBookingRequestDto roomBookingRequestDto, Model model) {
-	    
-	    String isBooked = roomBookingService.bookRoomNow(roomBookingRequestDto);
 
-	    if (isBooked != null && isBooked.equals("success")) {
-	        model.addAttribute("messageSuccess", "Room is Booked Successfully!");
-	        return "roomBook/success";  
-	    } else {
-	        model.addAttribute("messageError", "Room Booking Failed!");
-	        return "roomBook/error";     
-	    }
+		String isBooked = roomBookingService.bookRoomNow(roomBookingRequestDto);
+
+		if (isBooked != null && isBooked.equals("success")) {
+			model.addAttribute("messageSuccess", "Room is Booked Successfully!");
+			return "roomBook/success";
+		} else {
+			model.addAttribute("messageError", "Room Booking Failed!");
+			return "roomBook/error";
+		}
 	}
 
-	
 	@GetMapping("/bookingList")
 	public String roomBookingList(Model model) {
 		List<RoomBookingResponseDto> roomBookingResponseDtos = roomBookingService.roomBookingList();
