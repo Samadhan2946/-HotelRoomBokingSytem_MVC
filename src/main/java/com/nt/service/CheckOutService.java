@@ -10,4 +10,6 @@ public interface CheckOutService {
 
 	String confirmCheckOut(ConfirmCheckOutRequestDto confirmCheckOutRequestDto);
 
+	
+
 }

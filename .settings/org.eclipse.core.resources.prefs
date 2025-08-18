@@ -2,6 +2,7 @@ eclipse.preferences.version=1
 encoding//src/main/java=UTF-8
 encoding//src/main/resources=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/checkout/roomBookingList.jsp=UTF-8
+encoding//src/main/webapp/WEB-INF/jsp/receipt/generateReceipt.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/room/update.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/roomBook/bookNow.jsp=UTF-8
 encoding//src/main/webapp/WEB-INF/jsp/roomBook/doubleRoom.jsp=UTF-8
